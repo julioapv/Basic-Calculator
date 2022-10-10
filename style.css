@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(34,87,122);
+    background: linear-gradient(90deg, rgba(34,87,122,1) 17%, rgba(87,204,153,1) 63%, rgba(128,237,153,1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.calculator_container {
+    background: #f6f1ec;
+    height: 470px;
+    width: 700px;
+    border-radius: 25px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 15px 45px rgb(0, 0, 0, 0.25);
+}
+
+.tittle_section {
+    text-align: center;
+}
+
+.tittle_section h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.tittle_section p {
+    font-size: 1.2em;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.input_container {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_container input {
+    margin-top: 20px;
+    width: auto;
+    background: #ededed;
+    font-weight: 500;
+    border: 0;
+}
+
+.button_container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+.button_container button {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+background: linear-gradient(225deg, #89fea4, #73d58a);
+box-shadow:  -5px 5px 10px #6cc781,
+             5px -5px 10px #94ffb1;
+}
+
+button:hover {
+    transform: scale(1.1) perspective(1px);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+background: linear-gradient(225deg, #4eb88a, #5ddaa4);
+box-shadow:  -5px 5px 10px #49ab81,
+             5px -5px 10px #65edb1;
+    transition: all 0.5s ease;
+}
+
+
+.result_section {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer p {
+    position: relative;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer p:hover {
+    transform: scale(1.1);
+}

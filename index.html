@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main>
+
+    <div class="calculator_container">
+
+        <div class="tittle_section">
+            <h1>Basic Calculator</h1>
+            <p>This is one of my first projects that uses HTML, CSS and JS all together. Hope you like it!</p>
+        </div>
+
+        <div class="input_container">
+            <p>Write the numbers in the boxes below and press the buttons to get your result.</p>
+            <input class="calc1">
+            <input class="calc2">
+        </div>
+
+
+        <div class="button_container">
+            <button class="calcButtonSuma" onclick="buttonCalcSuma()">
+                    <ion-icon name="add-outline"></ion-icon>
+            </button>
+
+            <button class="calcButtonResta" onclick="buttonCalcResta()">
+                    <ion-icon name="remove-outline"></ion-icon>
+            </button>
+
+            <button class="calcButtonMulti" onclick="buttonCalcMulti()">
+                    <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+                
+            <button class="calcButtonDivi" onclick="buttonCalcDivi()">
+                    <ion-icon name="analytics-outline"></ion-icon>
+            </button>
+
+        </div>
+
+        <div class="result_section">
+            <p>Your result is </p>
+            <p class="result"></p>
+        </div>
+
+    </div>
+
+    </main>
+
+    <footer>
+        <p>Created by <a href="https://github.com/julioapv" target="_blank">Julio Peña</a></p>
+    </footer>
+<script src="./script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
